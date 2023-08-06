@@ -15,7 +15,7 @@ const NavBar = () => {
           <Nav.Link href="#">Menu</Nav.Link>
           <Nav.Link href="#">Promociones</Nav.Link>
         </Nav>
-      <CartWidget />
+        <CartWidget />
       </Container>
     </Navbar>
 
