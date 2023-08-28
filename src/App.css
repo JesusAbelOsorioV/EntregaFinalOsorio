@@ -1,13 +1,47 @@
-.App{
+.App {
   text-align: center;
 }
-.logo{
+.logo {
   width: 75px;
 }
-.cart{
+.cart {
   width: 25px;
 }
 
-.numerador{
+.numerador {
   color: white;
+}
+
+.Counter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Controls {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  padding: 8px;
+}
+
+.Button {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.ListGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+.buttondetalles {
+  text-decoration: none;
+}
+.detailcards{
+  display: flex;
+  justify-content: center;
+  
 }

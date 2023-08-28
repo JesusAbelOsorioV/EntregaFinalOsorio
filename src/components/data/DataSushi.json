@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "nombre": "Midori Roll",
+    "detalle": "Roll uramaki de krabsalad, plata y queso crema cubierto con furikake, coronado con wakame y salsa unagi. (10 piezas)",
+    "img": "https://res.cloudinary.com/dn6yf8b5z/image/upload/v1693172992/react%28JS%29/_DSC7555_a9hibo.jpg",
+    "categoria": "Rolls",
+    "stock": 10,
+    "precio": 4600
+  },
+  {
+    "id": "2",
+    "nombre": "Maki Sake Roll",
+    "detalle": "Roll maki, relleno de salmon, acompañado de wakame e ikura. (10 piezas)",
+    "img": "https://res.cloudinary.com/dn6yf8b5z/image/upload/v1693172960/react%28JS%29/MakiSake_Roll_ge3hog.jpg",
+    "categoria": "Rolls",
+    "stock": 21,
+    "precio": 5200
+  },
+  {
+    "id": "3",
+    "nombre": "Veggie Ceviche",
+    "detalle": "trozosndentofu sellado, setas y palta con leche de tigre, coronado con cebolla, cilantro y canchita",
+    "img": "https://res.cloudinary.com/dn6yf8b5z/image/upload/v1693172903/react%28JS%29/Veggie_Ceviche_b4zlr6.jpg",
+    "categoria": "Ceviches",
+    "stock": 13,
+    "precio": 5400
+  },
+  {
+    "id": "4",
+    "nombre": "Kuro",
+    "detalle": "Pesca del dia, salmon y langostinos, salsa kuro acevichada, cebolla morada, morron, coronado con cilantro y furikake",
+    "img": "https://res.cloudinary.com/dn6yf8b5z/image/upload/v1693172888/react%28JS%29/Kuro_Ceviche_yxfpar.jpg",
+    "categoria": "Ceviches",
+    "stock": 16,
+    "precio": 5080
+  },
+  {
+    "id": "5",
+    "nombre": "Aka",
+    "detalle": "Delgados cortes de salmon fresco, emulsión citrica de ostras, furikake. (12 cortes)",
+    "img": "https://res.cloudinary.com/dn6yf8b5z/image/upload/v1693172927/react%28JS%29/Aka_Tiradito_ogrewi.jpg",
+    "categoria": "Tiraditos",
+    "stock": 15,
+    "precio": 5700
+  },
+  {
+    "id": "6",
+    "nombre": "Shiro",
+    "detalle": "Delgados cortes de la pesca del dia, crema de ajiamarillo, chalaquita, crocantes de quinoa. (12 cortes)",
+    "img": "https://res.cloudinary.com/dn6yf8b5z/image/upload/v1693172916/react%28JS%29/Shiro_Tiradito_medufs.jpg",
+    "categoria": "Tiraditos",
+    "stock": 20,
+    "precio": 5350
+  },
+  {
+    "id": "7",
+    "nombre": "Kuro",
+    "detalle": "Bocado de shari, cubierto de una delgada lamina de salmon fresco,flameado, bañado en nuestra salsa kuro, coronado con crocantes",
+    "img": "https://res.cloudinary.com/dn6yf8b5z/image/upload/v1693172945/react%28JS%29/Kuro_Niguiri_kgqfvv.jpg",
+    "categoria": "Niguiris",
+    "stock": 7,
+    "precio": 4800
+  },
+  {
+    "id": "8",
+    "nombre": "Kiiro",
+    "detalle": "Bocado de shari, cubierto de una delgada lamina de la pesca del dia,aderezado con sal de trufas, bañado en una crema de aji amarillo coronado con crocantes de quinoa",
+    "img": "https://res.cloudinary.com/dn6yf8b5z/image/upload/v1693172941/react%28JS%29/Kiiro_Niguiri_lvjwi9.jpg",
+    "categoria": "Niguiris",
+    "stock": 18,
+    "precio": 4760
+  }
+]
