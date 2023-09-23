@@ -1,30 +1,36 @@
 import { useState, useEffect } from 'react'
-import datos from '../data/DataSushi.json'
 import ItemList from '../ItemLists';
 import { useParams } from 'react-router-dom';
+import {getFirestore, getDocs, collection, query, where} from "firebase/firestore";
 
 const IntemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState([(true)]);
     const { id } = useParams()
-    console.log(id)
+
     useEffect(() => {
-        const promise = new Promise((resolve, reject) => {
-            setTimeout(() => resolve(datos), 2000)
+        const db = getFirestore();
+    
+        const refCollection = id
+            ? query(collection(db, "dataSushi"), where("categoria", "==", id)) : collection(db, "dataSushi")
+        getDocs(refCollection)
+        .then((snapshot) => {
+          if (snapshot.size === 0) setProducts("no results")
+          else {
+            setProducts(
+              snapshot.docs.map(doc => {
+                return { id: doc.id, ...doc.data() };
+              })
+            )
+          }
         })
-
-        promise.then(datos => {
-            if (!id) {
-                setProducts(datos)
-            } else {
-                const productsFiltered = datos.filter(
-                    product => product.categoria === id
-                )
-                setProducts(productsFiltered)
-            }
+        .finally(() =>{
+            setLoading(false)
         })
-    }, [id])
+        }, [id]);
 
-    console.log(products)
+    if (loading) return  <img src="https://res.cloudinary.com/dn6yf8b5z/image/upload/v1693358120/react%28JS%29/loading_dcmraj.png" alt="loader" className="rotate infinite linear" />
+    
     return (
         <div>
             <h1>{greeting}</h1>

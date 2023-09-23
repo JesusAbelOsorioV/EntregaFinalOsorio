@@ -4,6 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBJrN_5Pttp2MaWGYYw-t61wx_xfIXxzkw",
+  authDomain: "kurosushi-66605.firebaseapp.com",
+  projectId: "kurosushi-66605",
+  storageBucket: "kurosushi-66605.appspot.com",
+  messagingSenderId: "72570442297",
+  appId: "1:72570442297:web:2980e3149173f832f773e8"
+};
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

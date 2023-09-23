@@ -1,0 +1,22 @@
+.rotate{
+  display: block;
+  width: 84px;
+  height: 84px;
+  margin: auto;
+  margin-top: 10%; 
+  animation: rotation 4s;
+}
+.liniear{
+  animation-timing-function: linear;
+}
+.infinite{
+  animation-iteration-count: infinite;
+}
+@keyframes rotation{
+  from {
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(359deg);
+  }
+}
